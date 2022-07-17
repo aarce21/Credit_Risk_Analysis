@@ -22,3 +22,10 @@ Six different Machine Learning Algorithms were applied to the credit risk data. 
 * The low risk results have a precision of 1.00, meaning the model correctly determined the number of low risk credit, and a recall of 0.69, which is a slight improvement of the recall score using the Naive Random Oversampling model. 
 
 ## ClusterCentroids Undersampling 
+![cluster_balanced](https://github.com/aarce21/Credit_Risk_Analysis/blob/main/images/cluster_balanced.PNG)
+![cluster_report](https://github.com/aarce21/Credit_Risk_Analysis/blob/main/images/cluster_report.PNG)
+
+* The ClusterCentroids model returned a balanced accuracy score of 0.54, lower than the two previous oversampling methods. 
+* The high risk results returned a precision of 0.01 and a recall of 0.69.
+* The low risk results returned a precision of 1.00 and a recall of 0.40. This low recall rate could indicate there there were a large number of false negatives. 
+
