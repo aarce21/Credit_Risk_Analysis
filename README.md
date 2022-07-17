@@ -29,3 +29,10 @@ Six different Machine Learning Algorithms were applied to the credit risk data. 
 * The high risk results returned a precision of 0.01 and a recall of 0.69.
 * The low risk results returned a precision of 1.00 and a recall of 0.40. This low recall rate could indicate there there were a large number of false negatives. 
 
+## SMOTEENN Combination Sampling 
+![smoteenn_balanced](https://github.com/aarce21/Credit_Risk_Analysis/blob/main/images/smoteenn_balanced.PNG)
+![smoteenn_report](https://github.com/aarce21/Credit_Risk_Analysis/blob/main/images/smoteenn_report.PNG)
+
+* The SMOTEENN model returned a balanced accuracy score of 0.645
+* The high risk results also returned a precision rate of 0.01 and a recall of 0.72, which is a slight improvement from the ClusterCentroids model. 
+* The low risk results returned a precision of 1.00, just as the other models did, and a recall of 0.57, also an increase from the ClusterCentroids model. 
