@@ -36,3 +36,6 @@ Six different Machine Learning Algorithms were applied to the credit risk data. 
 * The SMOTEENN model returned a balanced accuracy score of 0.645
 * The high risk results also returned a precision rate of 0.01 and a recall of 0.72, which is a slight improvement from the ClusterCentroids model. 
 * The low risk results returned a precision of 1.00, just as the other models did, and a recall of 0.57, also an increase from the ClusterCentroids model. 
+
+# Summary
+After running a model one of the features that is important to look at is the balanced accuracy score. The closer the balanced accuracy score is to 1, the better it is at classifying a loan application as either high or low risk. After running the Naive Random Oversamplimg, SMOTE, ClusterCentroids, and SMOTEENN models, the Naive Random Oversampling model returned the highest balanced accuracy score of 0.66. Based on these four models, I would not recommend any of them to determine high and low risk credit applications. Each model had a precision rate below 75% and the recall rates were also low, indicating that there may be a large number of false positives and false negatives in the models. 
