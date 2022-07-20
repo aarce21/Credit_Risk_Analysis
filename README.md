@@ -37,5 +37,24 @@ Six different Machine Learning Algorithms were applied to the credit risk data. 
 * The high risk results also returned a precision rate of 0.01 and a recall of 0.72, which is a slight improvement from the ClusterCentroids model. 
 * The low risk results returned a precision of 1.00, just as the other models did, and a recall of 0.57, also an increase from the ClusterCentroids model. 
 
+## Balanced Random Forest Classifier
+![brf_balanced](https://github.com/aarce21/Credit_Risk_Analysis/blob/main/images/brf_balanced.PNG)
+!![brf_report](https://github.com/aarce21/Credit_Risk_Analysis/blob/main/images/brf_report.PNG)
+
+* The balanced random forest ensemble learned model returned a balanced accuracy score of 0.789, 78.9%
+* The high risk results yielded a precision of 0.3 and a recall of 0.70
+* The low risk results yielded a precision of 1.00 and a recall of 0.87
+* After listing the features in descencing order, the top feature was 'total_rec"prncp'
+
+## Easy Ensemble AdaBoost Classifier
+![ee_balanced](https://github.com/aarce21/Credit_Risk_Analysis/blob/main/images/ee_balanced.PNG)
+![ee_report](https://github.com/aarce21/Credit_Risk_Analysis/blob/main/images/ee_report.PNG)
+
+* For the easy ensemble classifier, the balanced accuracy score was 0.93, 93%. This is the highest balanced accruacy score we have seen from a model. 
+* The high risk results have a precision of 0.09 and a recall of 0.92
+* The low risk results also have a precision of 1.00 and a recall of 0.94. 
+
+
 # Summary
-After running a model one of the features that is important to look at is the balanced accuracy score. The closer the balanced accuracy score is to 1, the better it is at classifying a loan application as either high or low risk. After running the Naive Random Oversamplimg, SMOTE, ClusterCentroids, and SMOTEENN models, the Naive Random Oversampling model returned the highest balanced accuracy score of 0.66. Based on these four models, I would not recommend any of them to determine high and low risk credit applications. Each model had a precision rate below 75% and the recall rates were also low, indicating that there may be a large number of false positives and false negatives in the models. 
+After running a model one of the features that is important to look at is the balanced accuracy score. The closer the balanced accuracy score is to 1, the better it is at classifying a loan application as either high or low risk. After running the Naive Random Oversamplimg, SMOTE, ClusterCentroids, and SMOTEENN models, the Naive Random Oversampling model returned the highest balanced accuracy score of 0.66. The Balanced Random Forest model, with a balanced accuracy score of 78.9%, and the Easy Ensemble model, with a balanced accuracy score of 93%, were then ran. The Easy Ensemble classifier yielded the highest accuracy score of any of the models, meaning it most accurately predicted high and low risk candidates, and this would be my recommendation. This model also had the higest recall for predicting high risk candidates, predicting the true positives at 92%. 
+
